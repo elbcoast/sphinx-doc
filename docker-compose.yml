@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    sphinx:
+        build:
+            context: etc/docker/sphinx
+        volumes:
+            - ./src:/sphinx:z
+            - ./packages:/home/sphinx/.local:z
